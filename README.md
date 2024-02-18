@@ -11,7 +11,7 @@ The default column name is SKU but can be changed with the `--sku-column-name` a
 Install in a virtual environment using:
 
 ```sh
-(.venv)$ python -m pip install "git+https://github.com/george-cm/electriflex-gloves-sku-parser#egg=electriflex-gloves-sku-parser"
+python -m pip install "git+https://github.com/george-cm/electriflex-gloves-sku-parser#egg=electriflex-gloves-sku-parser"
 ```
 
 In case you are new to Python and virtual environments here's an excelent primer from the nice poeple of Real Python: [Python Virtual Environments: A Primer][def].
