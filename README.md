@@ -18,7 +18,7 @@ In case you are new to Python and virtual environments here's an excelent primer
 
 ## Usage
 
-```sh
+```console
 usage: parse_electriflex_gloves_skus [-h] [--version] [--sku-column-name SKU_COLUMN_NAME] [--output-file OUTPUT_FILE] INPUTFILE
 
 parse_electriflex_gloves_skus v0.1.0
@@ -60,6 +60,30 @@ options:
                         Name of SKU column in the CSV file. Default: SKU
   --output-file OUTPUT_FILE, -o OUTPUT_FILE
                         Name of output file. Default: output.csv
+```
+
+## Examples
+
+Input file is named `input.csv`. The SKUs are in the `SKU` column:
+
+```Console
+parse_electriflex_gloves_skus input.csv
+```
+
+Results are saved in a file named `output.csv`.
+
+Input file is named `input.csv` and the SKUs are in a column named `SKU_CODE`:
+
+```console
+parse_electriflex_gloves_skus input.csv --sku-column SKU_CODE
+```
+
+Results are saved in a file named `output.csv`.
+
+Input file is named `input.csv`, SKUs are in the column `SKU_CODE` and the results are saved to a file named `parsed_output.csv`.
+
+```console
+parse_electriflex_gloves_skus input.csv --sku-column SKU_CODE --output-file parsed_output.csv
 ```
 
 ## Sourcecode
